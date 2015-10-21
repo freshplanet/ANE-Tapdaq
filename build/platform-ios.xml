@@ -1,0 +1,12 @@
+<platform xmlns="http://ns.adobe.com/air/extension/18.0">
+    <sdkVersion>7.0</sdkVersion>
+    <linkerOptions>
+    	<option>-framework AdSupport</option>
+        <option>-framework QuartzCore</option>
+        <option>-framework UIKit</option>
+        <option>-framework Foundation</option>
+    </linkerOptions> 
+    <packagedDependencies>
+        <packagedDependency>Tapdaq.framework</packagedDependency>
+    </packagedDependencies>
+</platform>

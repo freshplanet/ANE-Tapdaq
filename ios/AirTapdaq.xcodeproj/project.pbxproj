@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1608A85A1BD7E39000D2B77B /* AirTapdaq.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1608A8591BD7E39000D2B77B /* AirTapdaq.h */; };
+		1608A85C1BD7E39000D2B77B /* AirTapdaq.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608A85B1BD7E39000D2B77B /* AirTapdaq.m */; };
+		1608A8641BD7E50800D2B77B /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A8631BD7E50800D2B77B /* Adobe AIR.framework */; settings = {ASSET_TAGS = (); }; };
+		1608A8661BD7E58C00D2B77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A8651BD7E58C00D2B77B /* Foundation.framework */; };
+		1608A8681BD7E59800D2B77B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A8671BD7E59800D2B77B /* UIKit.framework */; };
+		1608A86A1BD7E59F00D2B77B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A8691BD7E59F00D2B77B /* QuartzCore.framework */; };
+		1608A86C1BD7E5A700D2B77B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A86B1BD7E5A700D2B77B /* AdSupport.framework */; };
+		1608A86E1BD7E63C00D2B77B /* Tapdaq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608A86D1BD7E63C00D2B77B /* Tapdaq.framework */; settings = {ASSET_TAGS = (); }; };
+		1608A8731BD7E94C00D2B77B /* FPANEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608A8721BD7E94C00D2B77B /* FPANEUtils.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1608A8541BD7E39000D2B77B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1608A85A1BD7E39000D2B77B /* AirTapdaq.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1608A8561BD7E39000D2B77B /* libAirTapdaq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirTapdaq.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1608A8591BD7E39000D2B77B /* AirTapdaq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirTapdaq.h; sourceTree = "<group>"; };
+		1608A85B1BD7E39000D2B77B /* AirTapdaq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirTapdaq.m; sourceTree = "<group>"; };
+		1608A8631BD7E50800D2B77B /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Adobe AIR.framework"; sourceTree = "<group>"; };
+		1608A8651BD7E58C00D2B77B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1608A8671BD7E59800D2B77B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1608A8691BD7E59F00D2B77B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1608A86B1BD7E5A700D2B77B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1608A86D1BD7E63C00D2B77B /* Tapdaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tapdaq.framework; sourceTree = "<group>"; };
+		1608A8701BD7E64F00D2B77B /* TapdaqResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapdaqResources.bundle; sourceTree = "<group>"; };
+		1608A8711BD7E94C00D2B77B /* FPANEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPANEUtils.h; sourceTree = "<group>"; };
+		1608A8721BD7E94C00D2B77B /* FPANEUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPANEUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1608A8531BD7E39000D2B77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1608A86C1BD7E5A700D2B77B /* AdSupport.framework in Frameworks */,
+				1608A86E1BD7E63C00D2B77B /* Tapdaq.framework in Frameworks */,
+				1608A86A1BD7E59F00D2B77B /* QuartzCore.framework in Frameworks */,
+				1608A8681BD7E59800D2B77B /* UIKit.framework in Frameworks */,
+				1608A8661BD7E58C00D2B77B /* Foundation.framework in Frameworks */,
+				1608A8641BD7E50800D2B77B /* Adobe AIR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1608A84D1BD7E39000D2B77B = {
+			isa = PBXGroup;
+			children = (
+				1608A8581BD7E39000D2B77B /* AirTapdaq */,
+				1608A8621BD7E50800D2B77B /* Frameworks */,
+				1608A8571BD7E39000D2B77B /* Products */,
+				1608A86F1BD7E64F00D2B77B /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		1608A8571BD7E39000D2B77B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1608A8561BD7E39000D2B77B /* libAirTapdaq.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1608A8581BD7E39000D2B77B /* AirTapdaq */ = {
+			isa = PBXGroup;
+			children = (
+				1608A8711BD7E94C00D2B77B /* FPANEUtils.h */,
+				1608A8721BD7E94C00D2B77B /* FPANEUtils.m */,
+				1608A8591BD7E39000D2B77B /* AirTapdaq.h */,
+				1608A85B1BD7E39000D2B77B /* AirTapdaq.m */,
+			);
+			path = AirTapdaq;
+			sourceTree = "<group>";
+		};
+		1608A8621BD7E50800D2B77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1608A86D1BD7E63C00D2B77B /* Tapdaq.framework */,
+				1608A86B1BD7E5A700D2B77B /* AdSupport.framework */,
+				1608A8691BD7E59F00D2B77B /* QuartzCore.framework */,
+				1608A8671BD7E59800D2B77B /* UIKit.framework */,
+				1608A8651BD7E58C00D2B77B /* Foundation.framework */,
+				1608A8631BD7E50800D2B77B /* Adobe AIR.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1608A86F1BD7E64F00D2B77B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1608A8701BD7E64F00D2B77B /* TapdaqResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1608A8551BD7E39000D2B77B /* AirTapdaq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1608A85F1BD7E39000D2B77B /* Build configuration list for PBXNativeTarget "AirTapdaq" */;
+			buildPhases = (
+				1608A8521BD7E39000D2B77B /* Sources */,
+				1608A8531BD7E39000D2B77B /* Frameworks */,
+				1608A8541BD7E39000D2B77B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTapdaq;
+			productName = AirTapdaq;
+			productReference = 1608A8561BD7E39000D2B77B /* libAirTapdaq.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1608A84E1BD7E39000D2B77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Freshplanet, Inc.";
+				TargetAttributes = {
+					1608A8551BD7E39000D2B77B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 1608A8511BD7E39000D2B77B /* Build configuration list for PBXProject "AirTapdaq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1608A84D1BD7E39000D2B77B;
+			productRefGroup = 1608A8571BD7E39000D2B77B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1608A8551BD7E39000D2B77B /* AirTapdaq */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1608A8521BD7E39000D2B77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1608A8731BD7E94C00D2B77B /* FPANEUtils.m in Sources */,
+				1608A85C1BD7E39000D2B77B /* AirTapdaq.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1608A85D1BD7E39000D2B77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1608A85E1BD7E39000D2B77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1608A8601BD7E39000D2B77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1608A8611BD7E39000D2B77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1608A8511BD7E39000D2B77B /* Build configuration list for PBXProject "AirTapdaq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1608A85D1BD7E39000D2B77B /* Debug */,
+				1608A85E1BD7E39000D2B77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1608A85F1BD7E39000D2B77B /* Build configuration list for PBXNativeTarget "AirTapdaq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1608A8601BD7E39000D2B77B /* Debug */,
+				1608A8611BD7E39000D2B77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1608A84E1BD7E39000D2B77B /* Project object */;
+}
