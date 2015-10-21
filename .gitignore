@@ -1,0 +1,15 @@
+# General
+temp
+build.config
+
+# Android
+
+# Xcode
+xcuserdata
+
+# OS X
+.DS_Store
+
+# intellij
+.idea
+*.iml
