@@ -10,9 +10,7 @@
 #import <Adobe AIR/Adobe AIR.h>
 #import <Tapdaq/Tapdaq.h>
 
-@interface AirTapdaq : NSObject <TapdaqDelegate> {
-    FREContext* _context;
-}
+@interface AirTapdaq : NSObject <TapdaqDelegate>
 
 @end
 

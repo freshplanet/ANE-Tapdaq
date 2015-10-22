@@ -2,7 +2,7 @@ package com.freshplanet.ane.AirTapdaq {
 
     import flash.events.Event;
 
-    public class AirTapdaqEvent extends Event{
+    public class AirTapdaqEvent extends Event {
 
         static public const WILL_DISPLAY_INTERSTITIAL                   : String = "willDisplayInterstitial";
         static public const DID_DISPLAY_INTERSTITIAL                    : String = "didDisplayInterstitial";

@@ -26,16 +26,26 @@ package com.freshplanet.ane.AirTapdaq {
          * @param clientKey
          * @return
          */
-        public static function init(applicationId:String, clientKey:String, debug:Boolean = false):AirTapdaq {
+        public static function init(config:AirTapdaqConfig):AirTapdaq {
 
             if (!_instance)
-                new AirTapdaq(Private, applicationId, clientKey, debug);
+                new AirTapdaq(Private, config);
             else
                 _log("ignoring new init");
 
             return _instance;
         }
 
+        /**
+         *
+         */
+        public function loadInterstitial(orientation:AirTapdaqOrientation):void {
+            _context.call("AirTapdaqGetInterstitialAdvertForOrientation", orientation.value);
+        }
+
+        /**
+         *
+         */
         public function showInterstitial():void {
             _context.call("AirTapdaqShowInterstitial");
         }
@@ -52,11 +62,13 @@ package com.freshplanet.ane.AirTapdaq {
 
         private var _context : ExtensionContext = null;
 
-        private var _applicationId  : String = null;
-        private var _clientKey      : String = null;
-        private var _debug          : Boolean = false;
+        private var _applicationId      : String    = null;
+        private var _clientKey          : String    = null;
+        private var _debug              : Boolean   = false;
+        private var _advertTypesEnabled : Array     = null;
+        private var _frequencyCap       : uint      = 2;
 
-        public function AirTapdaq(access:Class, applicationId:String, clientKey:String, debug:Boolean) {
+        public function AirTapdaq(access:Class, config:AirTapdaqConfig) {
 
             if (access != Private)
                 throw new Error("Private constructor call!");
@@ -69,12 +81,14 @@ package com.freshplanet.ane.AirTapdaq {
                 return;
             }
 
-            _applicationId  = applicationId;
-            _clientKey      = clientKey;
-            _debug          = debug;
+            _applicationId      = config.applicationId;
+            _clientKey          = config.clientKey;
+            _advertTypesEnabled = config.advertTypesEnabled;
+            _frequencyCap       = config.frequencyCap;
+            _debug              = config.debug;
 
             _context.addEventListener(StatusEvent.STATUS, _onStatus);
-            _context.call("AirTapdaqInit", _applicationId, _clientKey, _debug);
+            _context.call("AirTapdaqInit", _applicationId, _clientKey, _advertTypesEnabled, _frequencyCap, _debug);
 
             _instance = this;
         }
@@ -93,19 +107,12 @@ package com.freshplanet.ane.AirTapdaq {
 
         private function _onStatus(event:StatusEvent):void {
 
-            if (event.code == "LOGGING") {
+            if (event.code == "LOGGING")
                 _log(event.level);
-            }
             else {
 
-                for (var key:* in AirTapdaqEvent) {
-
-                    if (key == event.code) {
-
-                        this.dispatchEvent(new AirTapdaqEvent(key));
-                        break;
-                    }
-                }
+                _log(event.code);
+                this.dispatchEvent(new AirTapdaqEvent(event.code));
             }
         }
     }
