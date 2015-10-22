@@ -117,6 +117,8 @@ DEFINE_ANE_FUNCTION(AirTapdaqInit) {
     
     [tapdaq setDelegate:[AirTapdaq sharedInstance]];
     
+    [tapdaq launch];
+    
     return NULL;
 }
 
