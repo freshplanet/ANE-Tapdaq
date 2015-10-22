@@ -99,9 +99,6 @@ DEFINE_ANE_FUNCTION(AirTapdaqInit) {
     NSInteger frequencyCap = FPANE_FREObjectToInt(argv[3]);
     BOOL debug = FPANE_FREObjectToBool(argv[4]);
     
-    NSLog(@"AirTapdaqInit %@, %@, %@, %lu, %d", applicationId, clientKey, advertTypesEnabled, frequencyCap, debug);
-    FPANE_Log(context, @"AirTapdaqInit");
-    
     NSMutableDictionary *tapdaqConfig = [[NSMutableDictionary alloc] init];
     [tapdaqConfig setObject:advertTypesEnabled forKey:@"advertTypesEnabled"];
     [tapdaqConfig setObject:[NSNumber numberWithInt:(int)frequencyCap] forKey:@"frequencyCap"];
@@ -128,13 +125,8 @@ DEFINE_ANE_FUNCTION(AirTapdaqGetInterstitialAdvertForOrientation) {
     
     TDOrientation orientation = FPANE_FREObjectToInt(argv[0]);
     
-    NSLog(@"AirTapdaqGetInterstitialAdvertForOrientation %lu, portrait is %lu", (unsigned long)orientation, TDOrientationPortrait);
-    FPANE_Log(context, @"AirTapdaqGetInterstitialAdvertForOrientation");
-    
     if (airTapdaq.interstitial == nil || airTapdaq.interstitialOrientation != orientation) {
         
-        NSLog(@"AirTapdaq - making an interstitial");
-        FPANE_Log(context, @"making an interstitial");
         airTapdaq.interstitial = [[Tapdaq sharedSession] getInterstitialAdvertForOrientation:orientation];
         airTapdaq.interstitialOrientation = orientation;
     }
@@ -146,12 +138,7 @@ DEFINE_ANE_FUNCTION(AirTapdaqShowInterstitial) {
     
     AirTapdaq* airTapdaq = [AirTapdaq sharedInstance];
     
-    NSLog(@"AirTapdaqShowInterstitial");
-    FPANE_Log(context, @"AirTapdaqShowInterstitial");
-    
     if (airTapdaq.interstitial != nil) {
-        NSLog(@"AirTapdaq - showing an interstitial");
-        FPANE_Log(context, @"showing an interstitial");
         [airTapdaq.interstitial triggerImpression]; // doc says `sendImpression` @ http://support.tapdaq.com/article/39-ios-sdk-advanced-integration
     }
     
