@@ -64,9 +64,9 @@ package com.freshplanet.ane.AirTapdaq {
 
         private var _applicationId      : String    = null;
         private var _clientKey          : String    = null;
-        private var _debug              : Boolean   = false;
         private var _advertTypesEnabled : Array     = null;
         private var _frequencyCap       : uint      = 2;
+        private var _debug              : Boolean   = false;
 
         public function AirTapdaq(access:Class, config:AirTapdaqConfig) {
 
