@@ -17,7 +17,13 @@ package com.freshplanet.ane.AirTapdaq {
          *
          */
         public static function get isSupported():Boolean {
-            return _isIOS();// || _isAndroid();
+
+            var supported:Boolean = _isIOS();// || _isAndroid();
+
+            if (!supported)
+                _log("not supported");
+
+            return supported;
         }
 
         /**
@@ -27,6 +33,9 @@ package com.freshplanet.ane.AirTapdaq {
          * @return
          */
         public static function init(config:AirTapdaqConfig):AirTapdaq {
+
+            if (!isSupported)
+                return null;
 
             if (!_instance)
                 new AirTapdaq(Private, config);
@@ -40,6 +49,10 @@ package com.freshplanet.ane.AirTapdaq {
          *
          */
         public function loadInterstitial(orientation:AirTapdaqOrientation):void {
+
+            if (!isSupported)
+                return;
+
             _context.call("AirTapdaqGetInterstitialAdvertForOrientation", orientation.value);
         }
 
@@ -47,6 +60,10 @@ package com.freshplanet.ane.AirTapdaq {
          *
          */
         public function showInterstitial():void {
+
+            if (!isSupported)
+                return;
+
             _context.call("AirTapdaqShowInterstitial");
         }
 
